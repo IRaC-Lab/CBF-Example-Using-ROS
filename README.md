@@ -48,10 +48,17 @@ roslaunch ur_gazebo ur3_pos_bringup.launch
 rosrun ur_gazebo cbf_filter.py
 ```
 
-
 ## Running MATLAB for UR3 Trajectory
 
 Run cbf_joint.mlx or cbf_task.mlx in MATLAB, and make sure to modify the ROS_IP and MASTER_URI according to your environment.
+
+## Running CBF filter in ROS
+
+```bash
+roscore
+roslaunch ur_gazebo ur3_pos_bringup.launch
+rosrun ur_gazebo cbf_trajectory_test.py
+```
 
 ## License
 
