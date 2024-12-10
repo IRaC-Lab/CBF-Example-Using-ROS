@@ -88,15 +88,15 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>78 396000000</sim_time>
-      <real_time>46 378889609</real_time>
-      <wall_time>1724240621 157303001</wall_time>
-      <iterations>46194</iterations>
+      <sim_time>221 472000000</sim_time>
+      <real_time>143 360306534</real_time>
+      <wall_time>1733811931 817941769</wall_time>
+      <iterations>143076</iterations>
       <model name='cbf_object'>
-        <pose>0 0.45 0.2 0 -0 0</pose>
+        <pose>0 0.45 0.15 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0 0.45 0.2 0 -0 0</pose>
+          <pose>0 0.45 0.15 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -118,7 +118,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>6.28077 3.44422 2.04788 0 0.319642 -2.70299</pose>
+        <pose>-0.063984 0.57725 1.3739 0 0.939642 -1.63898</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
