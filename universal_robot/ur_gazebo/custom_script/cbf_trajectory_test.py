@@ -82,7 +82,7 @@ class TrajectoryClient:
         fx = np.zeros((6,1))
         gx = np.eye(6)
 
-        dhdx = 2*(p - p_obs).transpose() @ J[0:3, :]
+        dhdx = 2*(p - p_obs).transpose() @ J[:3, :]
         hx = np.linalg.norm(p - p_obs)**2 - (R + R_w)**2
        
         print(f"h(x): {hx}")
@@ -91,7 +91,7 @@ class TrajectoryClient:
 
         u = cp.Variable(6)
         cost = cp.quad_form(u - u_des, P)
-        constraint = [(dhdx @ fx).flatten() + dhdx @ gx @ u + (hx*gamma).flatten() >=0 ]
+        constraint = [(dhdx @ fx).flatten() + dhdx @ gx @ u + (hx*gamma).flatten() >= -0.1 ]
         prob = cp.Problem(cp.Minimize(cost), constraint)
         prob.solve()
 
