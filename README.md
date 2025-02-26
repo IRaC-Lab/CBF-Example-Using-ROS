@@ -33,24 +33,18 @@
     cd ~/catkin_ws
     catkin_make
     ```
-    
-## MATLAB Environment
 
-- Matlab 2024a
-- ROS Toolbox
-- Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators
+3. **Kinematics for UR3**
 
-## Running Gazebo and Executing CBF filter
+    ```bash
+    sudo apt install ros-noetic-kdl-parser-py
+    ```
 
-```bash
-roscore
-roslaunch ur_gazebo ur3_pos_bringup.launch
-rosrun ur_gazebo cbf_filter.py
-```
+4. **Install CVXPY**
 
-## Running MATLAB for UR3 Trajectory
-
-Run cbf_joint.mlx or cbf_task.mlx in MATLAB, and make sure to modify the ROS_IP and MASTER_URI according to your environment.
+    ```bash
+    pip install cvxpy
+    ```
 
 ## Running CBF filter in ROS
 
