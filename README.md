@@ -1,4 +1,4 @@
-# UR3 Trajectory using MATLAB (Ver ROS Noetic)
+# UR3 Trajectory using Control Barrier Function (Ver ROS Noetic)
 
 ## Packages
 
